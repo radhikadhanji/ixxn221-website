@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*Fonts */
+.bai-jamjuree-extralight {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .bai-jamjuree-light {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .bai-jamjuree-regular {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .bai-jamjuree-medium {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .bai-jamjuree-semibold {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .bai-jamjuree-bold {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .bai-jamjuree-extralight-italic {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .bai-jamjuree-light-italic {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .bai-jamjuree-regular-italic {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .bai-jamjuree-medium-italic {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .bai-jamjuree-semibold-italic {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .bai-jamjuree-bold-italic {
+    font-family: "Bai Jamjuree", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  /*Headings*/
+  
+h1{
+    color: #4a6db1;
+    font-weight: bold;
+    font-size: 100px;
+    font-family: 'Bai Jamjuree', serif;
+}
+
+h3{
+    color: #4a6db1;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Bai Jamjuree', serif;
+}
+
+h4{
+    color: #4a6db1;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Bai Jamjuree', serif;
+}
+
+/* Body text (as well as links, list items, etc */
+p{
+    color: #4a6db1;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Bai Jamjuree', serif;
+}
+
+a{
+  font-family: 'Bai Jamjuree', serif;
+}
+
+li{
+    color: #4a6db1;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Bai Jamjuree', serif;
+    line-height: 1.8;
+}
+
+body{
+    background-color: rgb(241, 246, 248);
+    margin: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    animation: slowfade 1s ease-out forwards;
+}
+/*Slowfade animation - slowly fade in website content on page load */
+@keyframes slowfade {
+    0% {
+      transform: translateY(1%);
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+/*Used for the contact me button */
+  button{
+    color: #ffffff;
+    font-family: 'Bai Jamjuree', serif;
+    font-size: 40px;
+    border-radius: 25px;
+    background-color: #4a6db1;
+    padding: 10px 20px;
+    cursor:pointer;
+    border: 5px solid #dfeaf9;
+  }
+
+  /*Styling the Contact Me form */
+
+  form{
+    position: relative;
+    margin: 100px;
+    border: 2px solid #4a6db1;
+    border-radius: 25px;
+    background-color: #dfeaf9;
+  }
+
+  /*Styling the contact me textarea */ 
+  input, textarea{
+    font-family: 'Bai Jamjuree', serif;
+    font-size: 15px;
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #7d98ce;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  input:focus, textarea:focus{
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: #83cfe4;
+  }
+
+  textarea{
+    padding: 13px;
+    color: #5b5555;
+  }
+
+  /*Styling the table and footer */
+  table, th, td{
+    color: #4a6db1;
+    font-size: 16px;
+    font-family: 'Bai Jamjuree', serif;
+    border-collapse: collapse;
+    padding: 10px;
+    border: 2px solid navy;
+    border-radius: 25px;
+    margin: 10px;
+  }
+
+  footer{
+    list-style-type: none;
+    font-family: 'Bai Jamjuree', serif;
+    padding: 20px;
+    border-radius: 25px 25px 0px 0px;
+    background-color: #4a6db1;
+    color: white;
+    overflow: hidden;
+  }
+
+  /*Contentbox, for general content that needs to stand out slightly */
+#contentbox{
+        border: 3px solid #4a6db1;
+        border-radius: 25px;
+        margin: 0px;
+        background-color: #dfeaf9;
+        text-align: center;
+        margin: 20px 20px 20px 20px;
+}
+ /* Styling the navigation bar */
+#navigation{
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    background-color: #4a6db1;
+    color: white;
+    overflow: hidden;
+}
+
+#navigation a{
+    display: block;
+    width: 150px;
+    background-color: #4a6db1;
+    color: linen;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 25px;
+    
+}
+
+#navigation li{
+    float: left;
+}
+
+#nav-icons{
+    float: right;
+}
+
+#navigation a:link{
+    color: linen;
+}
+
+#navigation a:visited{
+    color: white;
+}
+
+#navigation a:hover{
+    background-color: lightblue;
+    color: navy;
+}
+
+#navigation a:active{
+    color: navy;
+}
+
+#submit-button{
+    font-size: 15px;
+}
+
+/* Blog elements - styling the blog aside and blog posts */ 
+.blogaside{
+  float: left;
+  margin-left: 10px;
+  width: 26%;
+  border-radius: 10px;
+  border: 2px solid #4a6db1;
+  background-color: #dfeaf9;
+  text-align: center;
+  position: sticky;
+  top: 50px;
+}
+
+.blogpost{
+  float: right;
+  width: 70%;
+  border-radius: 10px;
+  border: 2px solid #4a6db1;
+  background-color: #dfeaf9;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+/* Compress blog text initially to 3.5lh */
+.blogtext{
+  height: 3.5lh;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  transition: height 0.5s;
+}
+/* Below is the code to create the read more button */
+input[type="checkbox"]{
+  bottom: 0;
+  clip: rect(0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+input[type="checkbox"]:not(:checked) ~ label::after{
+  content: "Read More";
+}
+
+input[type="checkbox"]:checked ~ label::after{
+  content: "Read Less";
+}
+/* Unravel the blog post to full height */
+input[type="checkbox"]:checked ~ .blogtext{
+  line-clamp: unset;
+  -webkit-line-clamp: unset;
+  height: auto;
+}
+
+label{
+  cursor: pointer;
+  font-family: 'Bai Jamjuree', serif;
+  color: #4a6db1;
+  margin-top: 1lh;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style each individual filter background */
+.filter{
+  width: 25%;
+  font-size: 20px;
+  border: 2px solid #19395a;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 2px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Bai Jamjuree', serif;
+  color: #19395a;
+  cursor: pointer;
+}
+
+.filter.quiz{
+  background-color: #e1baba;
+}
+
+.filter.design{
+  background-color: #c1e2a6;
+}
+
+.filter.coding{
+  background-color: #a2d7e0;
+}
+
+.filter.misc{
+  background-color: #d9a2e7;
+}
+
+/* Styling the tech icons and tool tip text */
+.tech{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+}
+
+.tech .tooltiptext{
+  visibility: hidden;
+  width: 120px;
+  background-color: #4a6db1;
+  font-family: 'Bai Jamjuree', serif;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tech .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tech img{
+  justify-content: center;
+  display: block;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.tech img:hover{
+  background-color: #dfeaf9;
+  border: 2px solid #4a6db1;
+  border-radius: 25px;
+}
+
+.tech:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Styling bold areas of the research report */
+.question{
+  background-color: #4a6db1;
+  padding: 10px;
+  margin: 50px;
+  border-radius: 25px;
+}
+.question h3{
+  color: white;
+}
+
+/* CSS media queries for mobile. */
+@media only screen and (max-width: 600px){
+  img{
+    height: 50%;
+    width: 50%;
+  }
+
+  .technologies{
+    text-align: center;
+    margin-left: 150px;
+    height: 50%;
+    width: 50%;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  .blogaside{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 96%;
+    border-radius: 10px;
+    border: 2px solid #4a6db1;
+    background-color: #dfeaf9;
+    text-align: center;
+    position: flex;
+  }
+
+  .blogpost{
+    width: 96%;
+  }
+
+  .blogtext{
+    height: 1lh;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    transition: height 0.5s;
+  }
+
+  ul{
+    font-size: 10px;
+  }
+
+  table, th, td{
+    color: #4a6db1;
+    font-size: 10px;
+    font-family: 'Bai Jamjuree', serif;
+    border-collapse: collapse;
+    padding: 0px;
+    border-radius: 25px;
+    margin: 10px;
+  }
+
+}
+
